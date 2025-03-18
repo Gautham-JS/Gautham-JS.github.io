@@ -8,6 +8,8 @@
 :root {
     --bg-color-primary: #0C0950;
     --font-color-primary: #FBE4D6;
+    --title-font-family: "Rock Salt", bold;
+    --body-font-family: "Montserrat", serif;
 }
 
 nav{
@@ -17,19 +19,55 @@ nav{
     background-color: var(--bg-color-primary);
 }
 
-nav .hamburger{
-    font-family: "Space Grotesk", serif;
-    position: relative;
-    transform: rotate(90deg);
-    font-size: 3rem;
-    cursor: pointer;
-    font-weight: 900;
+
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    font-weight: 800;
+    padding: 4px;
     color: var(--font-color-primary);
-    padding: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
+.hamburger .closeIcon {
+    display: none;
+}
+
+#hamburger-cross-icon {
+    font-size: 60px;
+}
+
+#hamburger-icon {
+    font-size: 60px;
+}
+
+.menu {
+    position: fixed;
+    transform: translateX(100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: var(--bg-color-primary);
+    color: white;
+    list-style: none;
+    padding-top: 0px;
+}
+
+
+.showMenu {
+    transform: translateY(0);
+}  
+
+
 nav .hamburger:hover {
-    color: #FFC75F;
+    color: orange;
 }
 
 .body-container {
@@ -49,7 +87,7 @@ nav .hamburger:hover {
 }
 
 body {
-    font-family: "Montserrat", serif;
+    font-family: var(--body-font-family);
     font-weight: 400;
     font-style: normal;
     padding: 0px;
@@ -57,7 +95,7 @@ body {
 }
 
 .main-hdr {
-    font-family: "Space Grotesk", serif;
+    font-family: var(--title-font-family);
     font-weight: 800;
     font-size: 100px;
     font-style: normal;
