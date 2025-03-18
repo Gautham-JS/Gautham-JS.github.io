@@ -5,10 +5,55 @@
     src: url('./assets/fonts/SpaceMono-Regular.ttf');
 }
 
+:root {
+    --bg-color-primary: #0C0950;
+    --font-color-primary: #FBE4D6;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color-primary);
+}
+
+nav .hamburger{
+    font-family: "Space Grotesk", serif;
+    position: relative;
+    transform: rotate(90deg);
+    font-size: 3rem;
+    cursor: pointer;
+    font-weight: 900;
+    color: var(--font-color-primary);
+    padding: 50px;
+}
+
+nav .hamburger:hover {
+    color: #FFC75F;
+}
+
+.body-container {
+    background-color: var(--bg-color-primary);
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-hdr-container {
+    color: var(--font-color-primary);
+    padding: 10px;
+}
+
+.content-container {
+    color: var(--font-color-primary);
+    padding: 10px;
+}
+
 body {
     font-family: "Montserrat", serif;
     font-weight: 400;
     font-style: normal;
+    padding: 0px;
+    margin: 0px;
 }
 
 .main-hdr {
@@ -16,12 +61,15 @@ body {
     font-weight: 800;
     font-size: 100px;
     font-style: normal;
+    color: var(--font-color-primary);
+    margin: 0px;
 }
 
 .section-hdr {
     font-family: "Space Mono", serif;
-    font-weight: 800;
+    font-weight: 1600;
     font-style: normal;
+    color: var(--font-color-primary);
 }
 
 .sh-slash {
