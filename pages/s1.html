@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+    <title>GauthamJS</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="body-container">
+        <div id="menu-container">
+            <div id="menu-wrapper">
+               <div id="hamburger-menu"><span></span><span></span><span></span></div>
+               <!-- hamburger-menu -->
+            </div>
+            <!-- menu-wrapper -->
+            <ul class="menu-list accordion">
+               <li id="nav1" class="toggle accordion-toggle"> 
+                  <!-- <span class="icon-plus"></span> -->
+                  <a class="menu-link" href="#">Home</a>
+               </li>
+               <!-- accordion-toggle -->
+               <!-- <ul class="menu-submenu accordion-content">
+                  <li><a class="head" href="#">Submenu1</a></li>
+                  <li><a class="head" href="#">Submenu2</a></li>
+                  <li><a class="head" href="#">Submenu3</a></li>
+               </ul> -->
+               <!-- menu-submenu accordon-content-->
+               <li id="nav2" class="toggle accordion-toggle"> 
+                  <!-- <span class="icon-plus"></span> -->
+                  <a class="menu-link" href="#">Tinkering Pages</a>
+               </li>
+               <!-- accordion-toggle -->
+               <!-- <ul class="menu-submenu accordion-content">
+                  <li><a class="head" href="#">Submenu1</a></li>
+                  <li><a class="head" href="#">Submenu2</a></li>
+               </ul> -->
+               <!-- menu-submenu accordon-content-->
+                <li id="nav3" class="toggle accordion-toggle"> 
+                  <!-- <span class="icon-plus"></span> -->
+                  <a class="menu-link" href="#">Contact</a>
+               </li>
+               <!-- accordion-toggle -->
+               <!-- <ul class="menu-submenu accordion-content">
+                  <li><a class="head" href="#">Submenu1</a></li>
+                  <li><a class="head" href="#">Submenu2</a></li>
+                  <li><a class="head" href="#">Submenu3</a></li>
+                  <li><a class="head" href="#">Submenu4</a></li>
+               </ul> -->
+               <!-- menu-submenu accordon-content-->
+            </ul>
+            <!-- menu-list accordion-->
+         </div>
+         <h1 class="main-hdr">Gautham J Suveny.</h1>
+         <!-- menu-container -->
+        <nav class="main-hdr-container">
+        </nav>
+
+        <h3 class="section-hdr">
+            <a class="sh-slash">//</a> 
+            Session 1 : Getting Started.
+        </h3>
+
+        <div class="content-container">
+
+            <h4 class="subsection-hdr"> <a class="ss-marker">--</a>Introduction.</h4>
+            <p>
+                In this session the first requirement was creating ones own portfolio website, that is this very webpage we have before our eyes :D
+                Next, we dive into the design process of tinkering tools.
+            </p>
+            <p>
+                For this I decided to start off with an initial baby step of prototyping one of the biggest hurdles in software in my opinion, 
+                having a humane vision of abstraction. For this I had a vision to build a set of jigsaw and lego inspired card set that can 
+                be interfaced to visually represent algorithms and how various sub-components piece together to create a larger component. 
+                We will refer to this hypothetical tool as <i>"Algocards"</i>
+            </p>
+
+            <hr>
+
+            <h4 class="subsection-hdr"> <a class="ss-marker">--</a>Design Prototyping Algocards.</h4>
+            For this design, I initially consided the design of the cards itself as drawings, an initial drawing-board of ideas on how the cards can 
+            represent the most common paradigm of software components, an input and output method. For this, 2 appraoches were considered:
+            <ol>
+                <li> <b> Jigsaw blocks: </b>
+                    <p>
+                        I thought a jigsaw inspired card would be a 
+                        good starting point as the concave notches can be an input to whatever a card represents and a convex notch can be the output.
+                    </p>
+                </li>
+                <li> <b> Thread connected blocks: </b>
+                    <p>
+                        Another contender for this would be the use of threads where the information flows from left to right when the cards are laid
+                        out on the table. Similar to how most people comprehend written language.
+                    </p>
+                </li>
+            </ol>
+            
+            
+            <hr>
+
+            <h4 class="subsection-hdr"> <a class="ss-marker">--</a>Reflection Questions.</h4>
+            <ol>
+                <li><b>Tinkering is widely associated with trial-and-error and brainstorming.  
+                    Find dictionary definitions of the three techniques, and compare them. 
+                    Does the definition of tinkering match the definition we have in the course? 
+                    Also, ask a generative AI tool for the definitions and differences. Which aspects does the answer provided miss?</b>
+                    
+                    <p>
+                        According to Cambridge Dictionary, The definitions of the three techniques are:
+                        <ul>
+                            <li> <i>Tinkering : </i>
+                                To make small changes to something, especially in an attempt to repair or improve it
+                            </li>
+                            <li><i>Train and Error : </i>
+                                A way of achieving an aim or solving a problem by trying a number of different methods and learning from the mistakes that you make
+                            </li>
+                            <li><i>Brainstorming : </i>
+                                An activity or business method in which a group of people meet to suggest a lot of new ideas for possible development
+                            </li>
+                        </ul>
+                        <br>
+
+
+                        Asking the same definitions to a generative AI, Claude AI in this case yields these:
+                        <br>
+                        <ul>
+                            <li> <i>Tinkering : </i>
+                                Tinkering is a hands-on approach where you explore, experiment, and modify something to understand how it works or to improve it.
+                            </li>
+                            <li><i>Train and Error : </i>
+                                Trial-and-error is a problem-solving method where multiple attempts are made until a solution is found.
+                            </li>
+                            <li><i>Brainstorming : </i>
+                                Brainstorming is a creative thinking technique focused on generating multiple ideas before evaluating them.
+                            </li>
+                        </ul>
+
+                        
+                    </p>
+                </li>
+            </ol>
+        </div>
+
+
+        <h3 class="section-hdr">
+            <a class="sh-slash">//</a> 
+            Navigate to other pages.
+            <div class="content-container">
+                <div class="tinkering-space">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="https://github.com/Gautham-JS">Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </h3>
+
+    </div>
+
+
+    <script src="scripts/core.js"></script> 
+</body>
+</html>
