@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+    <title>GauthamJS</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="body-container">
+        <div id="menu-container">
+            <div id="menu-wrapper">
+               <div id="hamburger-menu"><span></span><span></span><span></span></div>
+               <!-- hamburger-menu -->
+            </div>
+            <!-- menu-wrapper -->
+            <ul class="menu-list accordion">
+               <li id="nav1" class="toggle accordion-toggle"> 
+                  <!-- <span class="icon-plus"></span> -->
+                  <a class="menu-link" href="#">Home</a>
+               </li>
+               <!-- accordion-toggle -->
+               <!-- <ul class="menu-submenu accordion-content">
+                  <li><a class="head" href="#">Submenu1</a></li>
+                  <li><a class="head" href="#">Submenu2</a></li>
+                  <li><a class="head" href="#">Submenu3</a></li>
+               </ul> -->
+               <!-- menu-submenu accordon-content-->
+               <li id="nav2" class="toggle accordion-toggle"> 
+                  <!-- <span class="icon-plus"></span> -->
+                  <a class="menu-link" href="#">Tinkering Pages</a>
+               </li>
+               <!-- accordion-toggle -->
+               <!-- <ul class="menu-submenu accordion-content">
+                  <li><a class="head" href="#">Submenu1</a></li>
+                  <li><a class="head" href="#">Submenu2</a></li>
+               </ul> -->
+               <!-- menu-submenu accordon-content-->
+                <li id="nav3" class="toggle accordion-toggle"> 
+                  <!-- <span class="icon-plus"></span> -->
+                  <a class="menu-link" href="#">Contact</a>
+               </li>
+               <!-- accordion-toggle -->
+               <!-- <ul class="menu-submenu accordion-content">
+                  <li><a class="head" href="#">Submenu1</a></li>
+                  <li><a class="head" href="#">Submenu2</a></li>
+                  <li><a class="head" href="#">Submenu3</a></li>
+                  <li><a class="head" href="#">Submenu4</a></li>
+               </ul> -->
+               <!-- menu-submenu accordon-content-->
+            </ul>
+            <!-- menu-list accordion-->
+         </div>
+         <h1 class="main-hdr">Gautham J Suveny.</h1>
+         <!-- menu-container -->
+        <nav class="main-hdr-container">
+        </nav>
+
+        <h3 class="section-hdr">
+            <a class="sh-slash">//</a> 
+            Session 2 : Hands On.
+        </h3>
+
+        <div class="content-container">
+
+            <h4 class="subsection-hdr"> <a class="ss-marker">--</a>Introduction.</h4>
+            <p>
+                In this section we delve deeper into using various tinkering tools to play around with things in the lecture along with learning about their importance in cultivating a spirit
+                of tinkering among its users.
+            </p>
+            <p>
+                One of the most noticeable solutions turned out to be the "Makedo cardboard tools" that made me realise how it can be used for my design building block in a simple yet quite 
+                tinkerable way by simply using cardboard that is more practical to work with than 3D prints for the task at hand. It can also be disposed off and/or recycled in a sustainable way 
+                compared to 3D prints that release a ton of microplastics every time they interact with anything. 
+            </p>
+            <p>
+                This also gave more clarity on the type of solution that can be feasible for the building blocks, in the last session, I discussed threads connecting blocks as a method, 
+                that might be more practical than using jigsaw connections as the flow of data between the cards can be better visualized using the threads. Blender's node system acted as an 
+                inspiration here. 
+            </p>
+
+            <hr>
+
+            <h4 class="subsection-hdr"> <a class="ss-marker">--</a>Physical prototyping building blocks.</h4>
+
+            <p>
+                At this point I decided to make yet another crucial pivot in design. I decided to focus on specifically one type of algorithm : processing of audio. 
+                Each card still behaves the same way having a function or an input or an output, but now the input is audio/SD card inputs that convert digital audio into analog
+                and each function executes some operation on the analog signal it recieves. The flow of data occurs from the left edge of a card where every thread that comes upto it
+                acts as an input and the right edge has all threads that have outputs.
+            </p>
+
+            <p>Images for the physical cardboard prototype :</p>
+            <div class="image-container">
+                <img src="../assets/algo_sd_in.png">
+                <br>
+                <a><i>Fig : A input block that contains a SD card and AUX cable that converts the digital input to analog</i></a>
+            </div>
+            <br><br>
+            <div class="image-container">
+                <img src="../assets/algo_tuner.png">
+                <br>
+                <a><i>Fig : Example function block with tuner that tunes elements of an audio signal such as pitch/amplitude.</i></a>
+            </div>
+
+            <br><br>
+            <div class="image-container">
+                <img src="../assets/algo_card_phys.png" width="50%">
+                <br>
+                <a><i>Fig : A representation of how the cards connected with threads would look like.</i></a>
+            </div>
+            
+
+            <hr>
+
+            <h4 class="subsection-hdr"> <a class="ss-marker">--</a>Reflection Questions.</h4>
+            <ol>
+                <li><b>First your main observations during the tinkering sessions. Can you recognise most of the aspects of the framework in action?</b>
+                    <p>
+                        During the sessions, we played around with various tinkering tools such as the makedo kit mentioned in the building block section above, raspberry pi kits and all. 
+                        For each of the different kits, we had no idea what it did or should do initially and it was discovered my purely tinkering, trial-and-error and brainstorming.
+                    </p>
+                </li>
+                <li><b>Check up on the concept of Affordance. What is the application to the materials used in tinkering? 
+                    To what extend are the original definition (Gibson) or the HCI oriented re-definition of Norman useful? </b>
+                    <p>
+                        When we talk about the word "Affordance", we  think of monetary affordance of commodities. In the realm of tinkering based on the works provided and the lecture takeaways,
+                        it is clear that "Affordance" in this context refers to what the environment offers an individual. This can refer to the various tools and the subsequent
+                        solution space that gets unlocked using these tools. The way the user decides to use these tools to explore the affordance is the key process in tinkering.
+                    </p>
+                </li>
+                <li><b>Read the chapter 'Designing for tinkerability' from Design Make Play. Which criteria for tinkerability are described? Use these for the following table:</b>
+                    <p>
+                        In the chapter, the criterias discussed are "Process over product", "Setting of themes and not challenges", "Highlighting diverse examples", "Tinkering with space", 
+                        "Encourage engagement with people", "Posing open questions over gving answers" and "Combining diving in and stepping back".
+                    </p>
+                </li>
+
+                <li><b>Create a table with a number of tinkering materials (or material groups/collections) on the rows, and in the columns criteria for 'tinkerability' - 
+                    check additionally the definition of affordance, use other concepts discussed in the lecture. 
+                    Make sure to add the materials you used in the experiences you described in the previous session.</b>
+                    <div class="image-container">
+                        <img src="../assets/tinker_table.png" width="50%">
+                        <br>
+                        <a><i>Fig : Table representing tinkerability.</i></a>
+                    </div>
+                
+                </li>
+            </ol>
+            
+            <hr>
+        </div>
+
+
+        <h3 class="section-hdr">
+            <a class="sh-slash">//</a> 
+            Quick Navigation Links.
+            <div class="content-container">
+                <div class="tinkering-space">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./s1.html">Session 1 : Getting Started</a></li>
+                        <li><a href="./s2.html">Session 2 : Hands On</a></li>
+                    </ul>
+                </div>
+            </div>
+        </h3>
+
+    </div>
+
+
+    <script src="../scripts/core.js"></script> 
+</body>
+</html>
