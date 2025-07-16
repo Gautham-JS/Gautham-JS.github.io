@@ -325,3 +325,16 @@ body {
     background: #fff !important;
     opacity: 0;
 }
+
+.new-section {
+    padding: 10px;
+    background-color: #005f1c ;
+    border-radius: 10px;
+    border: rgba(250, 235, 215, 0.766);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.new-section p {
+    padding: 20px;
+}
