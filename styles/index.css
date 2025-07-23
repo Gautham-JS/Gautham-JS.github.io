@@ -95,12 +95,14 @@ nav .hamburger:hover {
 
 .content-container {
     color: var(--font-color-primary);
-    padding: 10px;
+    padding: 20px;
+    margin: 20px;
 }
 
 body {
     font-family: var(--body-font-family);
     font-weight: 400;
+    font-size: 20px;
     font-style: normal;
     padding: 0px;
     margin: 0px;
@@ -108,8 +110,8 @@ body {
 
 .main-hdr {
     font-family: var(--title-font-family);
-    font-weight: 600;
-    font-size: 100px;
+    font-weight: 1600;
+    font-size: 60px;
     font-style: normal;
     color: var(--font-color-primary);
     margin: 0px;
@@ -119,8 +121,22 @@ body {
 .section-hdr {
     font-family: "Space Mono", serif;
     font-weight: 1600;
+    font-size: 30px;
     font-style: normal;
-    color: var(--font-color-primary);
+    color: var(--font-color-primary);   
+}
+
+/* .section-hdr-container {
+    background: #9a9bec;
+    border-radius: 10px;
+} */
+
+ol li {
+    margin: 10px;
+}
+
+.subsection-hdr {
+    font-size: 25px;
 }
 
 .sh-slash {
@@ -336,5 +352,18 @@ body {
 }
 
 .new-section p {
+    padding: 20px;
+}
+
+.removed-section {
+    padding: 10px;
+    background-color: #720000 ;
+    border-radius: 10px;
+    border: rgba(250, 235, 215, 0.766);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.removed-section p {
     padding: 20px;
 }
